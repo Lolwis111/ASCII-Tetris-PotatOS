@@ -1,10 +1,11 @@
 # ASCII Tetris game
 
-To compile, use:
+Ported to PotatOS.
+Copy tetris.c into kernel/src/ and tetris.h into kernel/include/
 
-    make
+Call run_tetris(width, height) from the main() in kernel.c.
 
-It will output a binary file Tetris.
+
 
 Controls:
 

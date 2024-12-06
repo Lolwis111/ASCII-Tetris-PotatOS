@@ -1,13 +1,7 @@
 #ifndef TETRIS_H
-# define TETRIS_H
+#define TETRIS_H
 
 struct tetris;
-
-void tetris_cleanup_io();
-
-void tetris_signal_quit(int);
-
-void tetris_set_ioconfig();
 
 void tetris_init(struct tetris *t,int w,int h);
 
@@ -32,7 +26,5 @@ void tetris_fall(struct tetris *t, int l);
 void tetris_check_lines(struct tetris *t);
 
 int tetris_level(struct tetris *t);
-
-
 
 #endif //TETRIS_H
